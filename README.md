@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Uband-python-S2 项目团队-C4
 
 ##人物志
@@ -18,3 +19,7 @@ C3：青牙-A1314
 C4：
 
 ##以上~
+=======
+# uband-python-C4
+uband-python C4 group repo
+>>>>>>> 32942e0427b8a0b69345a9fa2509ad895e279373
