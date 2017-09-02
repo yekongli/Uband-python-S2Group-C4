@@ -76,8 +76,13 @@ def statictcs_words(words):
 def print_to_csv(volcaulay_list, to_file_path):
     nfile = open(to_file_path,'w+')
     for val in volcaulay_list:
-        num = val[1]
-        nfile.write("%s,%s\n" % (val[0], str(val[1])))
+        s=''
+        for i in xrange(0,len(val)):
+            if i==0:
+                s=val[i]
+            else:
+                s=s+","+str(val[i])
+        nfile.write(s+"\n")
     nfile.close()
 
 #统计单词所占百分比
@@ -89,6 +94,7 @@ def words_rate(word_list,total_num):
         word_list_rate.append([word[0], num, word_rate])
     return word_list_rate
 
+#输出固定词频的单词
 def words_list_split(word_list_rate,start_and_end):
     word_list_split=[]
     for val in word_list_rate:
@@ -96,6 +102,8 @@ def words_list_split(word_list_rate,start_and_end):
         if num<start_and_end[1]*100 and num>start_and_end[0]*100:
             word_list_split.append(val)
     return word_list_split
+
+
 
 def main():
     #是否输出固定词频的单词表
@@ -125,6 +133,9 @@ def main():
         print_to_csv(word_list_split,'output/testsplit.csv')
     else:
         print_to_csv(word_list,'output/test.csv')
+
+
+
 
 if __name__ == "__main__":
     main()
