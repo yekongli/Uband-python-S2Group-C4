@@ -133,11 +133,9 @@ def word_daily(word_mean):
     if is_sorted == 1:
         word_mean = sorted(word_mean, key = lambda d:d[0])
     while len(word_mean) >= n :
-        for i in range (0,n):
-            add_word = word_mean[0]
-            word_mean.remove(add_word)
-            daily_list.append(add_word)
-            i += 1
+        add_word = word_mean[0: n]
+        word_mean = word_mean[n:]
+        daily_list.extend(add_word)
         total_daily_list.append(daily_list)
         daily_list = []
         total_day += 1
