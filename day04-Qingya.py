@@ -130,9 +130,9 @@ def main():
     if fix_frequency:
         word_list_rate=words_rate(word_list,len(f_words))
         word_list_split = words_list_split(word_list_rate,start_and_end)
-        print_to_csv(word_list_split,'output/testsplit.csv')
+        print_to_csv(word_list_split,'output/word_fix_frequency.csv')
     else:
-        print_to_csv(word_list,'output/test.csv')
+        print_to_csv(word_list,'output/word_all.csv')
 
 
 

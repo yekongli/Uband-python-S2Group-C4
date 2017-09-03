@@ -191,29 +191,26 @@ def main():
     # 3. 统计单词和排序
     word_list = statictcs_words(f_words)
 
-    # 4. 输出文件
-    #  输出固定词频的文件\
+    # 固定词频的文件\
     word_list_rate = words_rate(word_list, len(f_words))
     if fix_frequency:
-        word_list = words_list_split(word_list_rate, start_and_end)
+        word_list_split = words_list_split(word_list_rate, start_and_end)
+        word_list_freq=word_list_split
     else:
-        word_list=word_list_rate
-
-    word_has_ex,word_no_ex=word_ex_list(word_list,dict("8000-words.txt"))
-
-    print_to_csv(word_has_ex,'output/testex.csv')
-    print len(word_has_ex)
+        word_list_freq=word_list_rate
+    #有翻译的文件盒没有翻译的文件
+    word_translate,word_no_translate=word_ex_list(word_list_split,dict("8000-words.txt"))
 
     #设置每天的背单词数
     recite_num_day=50
-    req_or_no=False
+    req_or_no=True
     if req_or_no:
-        recite_words=req_wordex_list(word_has_ex,recite_num_day)
+        recite_words=req_wordex_list(word_translate,recite_num_day)
     else:
-        recite_words=noreq_wordex_list(word_has_ex,recite_num_day)
+        recite_words=noreq_wordex_list(word_no_translate,recite_num_day)
 
     for index,item in enumerate(recite_words):
-        print_to_csv(item,'output/'+str(index)+'.csv')
+        print_to_csv(item,'output/'+str(index+1)+'.csv')
 
 if __name__ == "__main__":
     main()

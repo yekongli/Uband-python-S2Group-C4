@@ -157,18 +157,19 @@ def main():
     word_list = statictcs_words(f_words)
 
     # 4. 输出文件
-    print_to_csv(word_list, 'output/test.csv')
+
 
     # 输出固定词频的文件\
+    word_list_rate = words_rate(word_list, len(f_words))
     if fix_frequency:
-        word_list_rate = words_rate(word_list, len(f_words))
         word_list_split = words_list_split(word_list_rate, start_and_end)
-        print_to_csv(word_list_split, 'output/testsplit.csv')
+        word_list_freq=word_list_split
     else:
-        print_to_csv(word_list, 'output/test.csv')
-
-    word_ex,word_no_ex=word_ex_list(word_list_split,dict("8000-words.txt"))
-    print_to_csv(word_ex,'output/testex.csv')
+        word_list_freq=word_list_rate
+        #输出有翻译的文件盒没有翻译的文件
+    word_translate,word_no_translate=word_ex_list(word_list_split,dict("8000-words.txt"))
+    print_to_csv(word_translate,'output/has_tran.csv')
+    print_to_csv(word_no_translate,'output/no_has_tran.csv')
 
 
 if __name__ == "__main__":
