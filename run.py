@@ -3,9 +3,9 @@ from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/Xiangwan')
+@app.route('/')
 def details():
-	return render_template('A10119.html')
+	return render_template('Qingya.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
