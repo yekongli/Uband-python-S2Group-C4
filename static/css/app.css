@@ -11,11 +11,11 @@ body{
 	border-style: solid;
 	border-color: rgba(255,153,153,0.5);
 }
-h1{
+h1.name_title{
 	text-align: center;
 	font-size: 18px;
 }
-p{
+p.description_sth{
 	font-family: "Times New Roman";
 	text-align: center;
 	font-size:13px;
