@@ -1,11 +1,61 @@
 from flask import Flask
 from flask import render_template
+import json
 
 app = Flask(__name__)
 
-@app.route('/<string:student_number>/details')
-def details(student_number):
-	return render_template(str(student_number) + '.html')
+def read_json_file(filepath):
+	jsonfile = open(filepath, 'r+')
+	jsontext = jsonfile.read()
+	data = json.loads(jsontext)
+	jsonfile.close()
+	return data
+
+@app.route('/')
+def hello():
+	#read data from json
+	data = read_json_file('static/data/index.json')
+	return render_template('C4lst.html', data=data)
+
+@app.route('/details/<string:student_number>')
+def look_details(student_number):
+	data = read_json_file('static/data/index.json')
+	user_data = {}
+	for item in data:
+		if student_number == item['student_number']:
+			user_data = item
+			break
+	return render_template('details.html',data=user_data)
+
+@app.route('/details/<string:student_number>/news')
+def fresh(student_number):
+	data = read_json_file('static/data/index.json')
+	user_data = {}
+	for item in data:
+		if student_number == item['student_number']:
+			user_data = item
+			break
+	return render_template('news.html', data=user_data)
+
+@app.route('/details/<string:student_number>/travel')
+def travel(student_number):
+	data = read_json_file('static/data/index.json')
+	user_data = {}
+	for item in data:
+		if student_number == item['student_number']:
+			user_data = item
+			break
+	return render_template('travel.html', data=user_data)
+
+@app.route('/details/<string:student_number>/reading')
+def reading(student_number):
+	data = read_json_file('static/data/index.json')
+	user_data = {}
+	for item in data:
+		if student_number == item['student_number']:
+			user_data = item
+			break
+	return render_template('reading.html', data=user_data)
 
 if __name__ == '__main__':
     app.run(debug=True)
