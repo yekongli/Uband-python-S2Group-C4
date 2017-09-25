@@ -22,9 +22,7 @@ def look_details(student_number):
 	user_data={}
 	data=read_json_file('static/data/index.json')
 	for item in data:
-
 		if student_number == item['student_number']:
-			
 			user_data=item
 			break
 	print user_data
@@ -35,9 +33,7 @@ def news(student_number):
 	user_data={}
 	data=read_json_file('static/data/index.json')
 	for item in data:
-
-		if student_number == item['student_number']:
-			
+		if student_number == item['student_number']:	
 			user_data=item
 			break
 	print user_data
@@ -48,9 +44,7 @@ def readnote(student_number):
 	user_data={}
 	data=read_json_file('static/data/index.json')
 	for item in data:
-
-		if student_number == item['student_number']:
-			
+		if student_number == item['student_number']:	
 			user_data=item
 			break
 	print user_data
@@ -61,9 +55,7 @@ def trival(student_number):
 	user_data={}
 	data=read_json_file('static/data/index.json')
 	for item in data:
-
-		if student_number == item['student_number']:
-			
+		if student_number == item['student_number']:	
 			user_data=item
 			break
 	print user_data
