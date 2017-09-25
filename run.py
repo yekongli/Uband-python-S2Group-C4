@@ -58,4 +58,4 @@ def reading(student_number):
 	return render_template('reading.html', data=user_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+	app.run(debug=True)
