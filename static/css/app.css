@@ -1,24 +1,145 @@
-body{
-	border-style: solid;
-	border-color: rgba(255,153,153,0.5);
+.logo-page{
+	padding-bottom: 10px;
+	border:solid 1px #EFEFEF;
 }
-.head_img{
-	width:100px;
-	height:100px;
-	margin: 0 auto;
+.uband-logo{
+	width:80px;
+	height:33px;
 	display:block;
-	border-radius:100%;
-	border-style: solid;
-	border-color: rgba(255,153,153,0.5);
+	margin: 0 auto; 
+	padding-top: 5px;
 }
-h1.name_title{
-	text-align: center;
-	font-size: 18px;
+.uband-user-item{
+	margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid #efefef 1px;
+    border-radius: 10px;
 }
-p.description_sth{
-	font-family: "Times New Roman";
-	text-align: center;
-	font-size:13px;
+.uband-user-item-img{
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+}
+.uband-user-label{
+	width: 50px;
+	height: 10px;
+	background-color: #FF4060;
+	border-radius: 8px;
+	font-size: 10px;
+	color: #fff;
+	padding: 3px;
+	margin-left: 10px
+}
+.uband-user-item-title{
+	font-size: 14px;
+}
+.uband-user-item-desc{
+	font-size: 12px
+}
+.uband-user-item-checkins{
+	width: 70px;
+	margin-top: -48px;
+}
+.uband-user-item-checkins > p{
+	text-align: left;
+	font-size: 12px;
+	color: #828282
 }
 
-	
+/*detail.css*/
+.details-head{
+    width: 100%;
+    height: 206px;
+    background-image: url(/static/img/details-background.png);
+    background-size: 406px;
+
+}
+.details-head-img-page{
+	width: 100%;
+	height: 108px;
+}
+.details-head-img{
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	margin-top:-20px;
+}
+.back-icon{
+	background-image: url('/static/img/back-icon.png');
+	width:9px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 12px;
+	margin-top: 10px
+}
+.details-head-desc-page{
+	width:100%;
+	height: 98px;
+	background-color: #fff;
+	opacity:0.5;
+}
+.details-head-name{
+	font-size: 18px;
+	text-align: center;
+	padding-top: 10px
+}
+.details-head-desc{
+    font-size: 13px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+
+.details-divide{
+	border-bottom: solid 1px #EFEFEF;
+	height:45px;
+
+}
+
+.details-tab{
+	color: #333;
+	font-size: 14px;
+	width:25%;
+	float: left;
+	list-style: none;
+	display: block;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tab-active{
+	color: #FF4060
+}
+
+.content{
+	width:100%;
+}
+.details-intro{
+	min-height: 200px;
+	border-radius: 8px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border: solid 1px #EFEFEF;
+	margin-top: 10px;
+	padding:15px;
+}
+.detail-intro p{
+	text-align:center;
+}
+.details-intro img{
+	width: 100%;
+	display: block;
+}
+.news-back{
+	background-color:  #e6f3f3 ;
+	opacity:0.5;
+	width:100%;
+	height:auto;
+	border-radius:8px;
+	margin-bottom:10px;
+}
