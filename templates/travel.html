@@ -43,7 +43,19 @@
 
     <div class="content">
         <div class="details-intro">
-            {{data.intro | safe}}
+            <div>
+            {% for travel in data.travel %}
+                <div class="responsive">
+                    <div class="img">
+                        <a target="_blank" href="img_fjords.jpg">
+                        <img src="{{travel.travel_photo}}" alt="" width="300" height="200">
+                        </a>
+                        <div class="travel_desc">{{travel.travel_desc}}</div>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="clearfix"></div>
+            </div>
         </div>
     </div>
     <div class="weui-footer">

@@ -42,11 +42,8 @@
     <div class="content">
         <div class="details-intro">
         {% for news in data.daily_news %}
-            <div class="WB_info">
-                <a href="{{news.link}}"><li>{{news.name}}</li></a>
-            </div>
                 <div>
-                    {{news.content}}    
+                    <li>{{news.content}}</li>
                 </div>
                 <div>
                     <img class="photo_img" src="{{news.photo}}" alt="">

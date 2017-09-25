@@ -20,6 +20,24 @@
 			"created_at":"2017-09-19"
 		}
 	],
+		"travel":[
+			{
+				"travel_photo":"http://www.runoob.com/wp-content/uploads/2016/04/img_fjords.jpg",
+				"travel_desc":"山河湖泊，这是青海"
+			},
+						{
+				"travel_photo":"http://www.runoob.com/wp-content/uploads/2016/04/img_forest.jpg",
+				"travel_desc":"峡谷幽静，这是丛林"
+			},
+						{
+				"travel_photo":"http://www.runoob.com/wp-content/uploads/2016/04/img_lights.jpg",
+				"travel_desc":"极光跳跃，这是阿拉斯加"
+			},
+						{
+				"travel_photo":"http://www.runoob.com/wp-content/uploads/2016/04/img_mountains.jpg",
+				"travel_desc":"雪山巍峨，这是西藏"
+			}
+		],
 		"intro":"<p style=\"text-align: center;\"><img src=\"http://arkie-public.images.arkie.cn/images/Template-6e49529b-8001-436c-bcb3-a4c2ff948318_01ba679f-2943-4365-82cc-dfaf96d83764.png\"/></p>"
 	},
 	{
@@ -33,9 +51,9 @@
 	{
 		"student_number":"A16342",
 		"name":"Apairery",
-		"desc":"这是一名很厉害的软文小妹",
-		"tags":["经济学渣","爱自由","不善交际"],
-		"checkins":110,
+		"desc":"这是一名很厉害的软文小妹，最近在思考如何撩男神",
+		"tags":["经济学渣","爱自由","尬聊"],
+		"checkins":414,
 		"head_icon":"/static/img/Apairery.jpg",
 		"daily_news":[
 		{
@@ -51,7 +69,13 @@
 			"created_at":"2017-09-23"
 		}
 	],
-		"intro":"<p style=\"text-align: center;\"><img src=\"/static/img/ap_intro.jpg\"/></p>"
+		"travel":[
+			{
+				"travel_photo":"/static/img/16.jpg",
+				"travel_desc":"十六铺码头"
+			}
+		],
+		"intro":"<p style=\"text-align: center;\">是只废鹅了<img src=\"/static/img/ap_intro.jpg\"/></p>"
 	},
 	{
 		"student_number":"B21052",
