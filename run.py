@@ -50,8 +50,8 @@ def readnote(student_number):
 	print user_data
 	return render_template('readnote.html',data=user_data)
 
-@app.route('/details/<student_number>/trival')
-def trival(student_number):
+@app.route('/details/<student_number>/travel')
+def travel(student_number):
 	user_data={}
 	data=read_json_file('static/data/index.json')
 	for item in data:
@@ -59,7 +59,7 @@ def trival(student_number):
 			user_data=item
 			break
 	print user_data
-	return render_template('trival.html',data=user_data)
+	return render_template('travel.html',data=user_data)
 
 if __name__ == '__main__':
     app.run(debug=True)
