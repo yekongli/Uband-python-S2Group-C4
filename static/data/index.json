@@ -49,20 +49,20 @@
 	"desc":"喜欢理科，却选了文科；一直想做一名匠人，却在学笔译；喜欢吃米饭，却不知道哪里的好吃，纠结ing...",
 	"tags":["纠结体","米饭"],
 	"checkin":11,
-	"head":"/static/img/guoshushu.png",
-	"intro":"hihgkike",
+	"head":"/static/img/caramel.jpg",
+	"intro":"<section data-role=\"outer\" label=\"Powered by 135editor.com\" style=\"font-family:微软雅黑;font-size:16px;\"><p style=\"text-align:center;\" dir=\"ltr\"><section data-role=\"circle\" style=\"border-radius: 100%;overflow: hidden;margin: 0 auto;width:100%;padding-bottom:100%;height:0px;background-image:url(/static/img/lufei.jpg);background-position:50% 50%;background-size: cover;\"><img src=\"http://qdn.135editor.com/files/users/305/3051706/201709/FztTf8QI_Ihsw.png\" style=\"opacity: 0; width: 458px; height: 343px;\" width=\"458\" height=\"343\"/></section></p><section class=\"domhelper\"><section class=\"_135editor\" data-tools=\"135编辑器\" style=\"border: 0px none; padding: 0px; box-sizing: border-box;\" data-color=\"rgb(190, 119, 99)\" data-custom=\"rgb(190, 119, 99)\"><section style=\"border-color: rgb(190, 119, 99); border-style: solid; border-width: 2px 2px 8px; margin: 10px auto; padding: 15px; box-sizing: border-box;\"><p style=\"text-align: justify;\"><span style=\"font-family: 宋体; font-size: 14px; color: #696969;\">时间久了，距离远了，自己的生活圈子越来越小了，翻开手机的通讯录，似乎再也找不到可以说话的人了额，至少不会像以前一样了。</span></p></section></section></section><p style=\"text-align: justify; font-size: 14px; color: rgb(105, 105, 105); line-height: 1.75em; margin-top: 0px;\">        河南，山东，广东，这是目前呆过的省份，长短依次减少。问我最爱哪个，我会选山东，毕竟我是一个山东汉子，哪有汉子不爱家？可能以后会一直呆在广州了，至于河南，那只是我长大的地方，在山里留下了最美的童年。</p><p style=\"text-align: justify; font-size: 14px; color: rgb(105, 105, 105); line-height: 1.75em; margin-top: 0px;\">        喜欢喝雪碧，喜欢它的味道，后来才知道那是柠檬。喜欢计算机，在我的心目中，黑客都是大神。喜欢翻译，觉得文化的转化可以如此艺术与美丽。喜欢手工艺，可以为自己爱的人，做任何东西。</p><p style=\"text-align: justify; font-size: 14px; color: rgb(105, 105, 105); margin-top: 0px;\">        子柒，愿多年以后有人问你粥可温，也有人与你立黄昏。</p></section>",
 	"news":[
-		{"date":"2017-9-25","daynews":"青牙完成作业啦～～"},
-		{"date":"2017-9-20","daynews":"强烈推荐《白夜追凶》，剧情紧凑，不拖沓，主线辅线相辅相成，演员演技在线，值得一追，每周三，等得心好焦急～～"}
+		{"date":"2017-9-26","daynews":"焦糖完成作业啦～～"},
+		{"date":"2017-9-25","daynews":"今天又是忙碌的一天，由于落下的课程太多，有很多地方不懂，也只能暂时依葫芦画瓢了~~~"}
 		],
 	"notes":"<p>efwe</p>",
-	"travel":[{"date":"2017-8-18",
-				"travel_photo":"http://www.runoob.com/wp-content/uploads/2016/04/img_fjords.jpg",
-				"travel_desc":"山河湖泊",
+	"travel":[{"date":"2017-2-25",
+				"travel_photo":"/static/img/gulangyu.jpg",
+				"travel_desc":"鼓浪屿",
 				"link":""},
-				{"date":"2017-8-18",
-				"travel_photo":"http://www.runoob.com/wp-content/uploads/2016/04/img_fjords.jpg",
-				"travel_desc":"山河湖泊",
+				{"date":"2016-8-18",
+				"travel_photo":"/static/img/guangzhouta.jpg",
+				"travel_desc":"广州塔",
 				"link":""}]
 },
 {
